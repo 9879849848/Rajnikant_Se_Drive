@@ -1,5 +1,5 @@
  //WAP to find area of circle, rectangle and triangle
- /*#include<stdio.h>
+ #include<stdio.h>
  main ()
  {
   float radius,area_circle;
@@ -7,10 +7,10 @@
   scanf("%f",&radius);
   area_circle=3.14*radius*radius;
   printf("Area of circle:%f",area_circle);	
-}*/ 
+} 
 
 //rectangle
-/*#include<stdio.h>
+#include<stdio.h>
  main ()
 {
 
@@ -20,7 +20,7 @@
     	area_rectangle=height*width;
     	printf("Area of the rectangle:%d",area_rectangle);
 	
-}*/
+}
 #include<stdio.h>
  main ()
 {
