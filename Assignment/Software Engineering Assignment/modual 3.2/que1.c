@@ -14,6 +14,7 @@ int main() {
     switch (operator) {
         case '+':
             result = num1 + num2;
+            printf("Result=:%d",result);
             break;
         case '-':
             result = num1 - num2;
@@ -35,6 +36,6 @@ int main() {
             }
             result = fmod(num1, num2); // Using fmod for
         }
-    dd
+
 }
 

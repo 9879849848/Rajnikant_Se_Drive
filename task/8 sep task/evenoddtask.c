@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 void main ()
 {
 	int arr[10],i,even_total=0,odd_total=0,even=0,odd=0;
