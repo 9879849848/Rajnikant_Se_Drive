@@ -1,4 +1,5 @@
-#include<stdio.h>
+
+//Sum of odd numbers WAP to print table up to given numbers#include<stdio.h>
 void main ()
 {
 	int num,even=0,odd=0,even_total,odd_total;
