@@ -15,7 +15,7 @@ void main()
     {
         for (j= 0; j < 2; j++)
         {
-            printf("Enter Your Second Arr:[%d][%d]", i, j);
+            printf("Enter Your Second Arr:[%d][%d]", i, j);     
             scanf("%d", &arr2[i][j]);
         }
 
