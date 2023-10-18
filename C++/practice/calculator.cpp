@@ -12,7 +12,7 @@ public:
         {
         case 1:
         {
-            int result = vala + valb;
+            int result = vala + valb; z
             cout << "sum of vala and valb:" << result;
             break;
         }

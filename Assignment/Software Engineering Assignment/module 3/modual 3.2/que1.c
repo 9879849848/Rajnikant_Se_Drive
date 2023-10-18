@@ -13,18 +13,22 @@ int main() {
 
     switch (operator) {
         case '+':
+        {
             result = num1 + num2;
             printf("Result=:%d",result);
             break;
         case '-':
             result = num1 - num2;
+            printf("Result=:%d",result);
             break;
         case '*':
             result = num1 * num2;
+            printf("Result=:%d",result);
             break;
         case '/':
             if (num2 == 0) {
                 printf("Error! Division by zero is not allowed.\n");
+                printf("Result=:%lf",result);
                 return 1; // Exit with an error code
             }
             result = num1 / num2;
@@ -32,10 +36,12 @@ int main() {
         case '%':
             if (num2 == 0) {
                 printf("Error! Modulo by zero is not allowed.\n");
+                printf("Result=:%d",result);
                 return 1; // Exit with an error code
             }
-            result = fmod(num1, num2); // Using fmod for
+           /*  printf("Result =:%lf",result); */
         }
+    }
 
 }
 
