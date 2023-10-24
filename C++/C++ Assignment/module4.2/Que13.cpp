@@ -1,32 +1,33 @@
 /* Write a program to swap the two numbers using friend function without
 using third variable   */
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-class SwapNumbers {
-private:
-    int num1, num2;
-
-public:
-    SwapNumbers(int a, int b) : num1(a), num2(b) {}
-    friend void swapNumbers(SwapNumbers &obj);
-    void displayNumbers() {
-        cout << "Numbers after swapping: " << num1 << " " << num2 << endl;
+class swapnumber
+{
+    private:
+    int value1,value2;
+    public:
+    swapnumber(int a , int b) : value1(a),value2 (b) {}
+    friend void raj(swapnumber &obj);
+    void display()
+    {
+        cout<<"Number After Swaping"<<value1<<"  "<<value2;
     }
 };
-void swapNumbers(SwapNumbers &obj) {
-    obj.num1 = obj.num1 + obj.num2;
-    obj.num2 = obj.num1 - obj.num2;
-    obj.num1 = obj.num1 - obj.num2;
-}
+    void raj(swapnumber &obj) 
+    {
+        obj.value1=obj.value1+obj.value2;
+        obj.value2=obj.value1-obj.value2;
+        obj.value1=obj.value1-obj.value2;
+    }
 
-int main() {
-    int num1, num2;
-    cout << "Enter two numbers: ";
-    cin >> num1 >> num2;
-    SwapNumbers obj(num1, num2);
-    swapNumbers(obj);
-    obj.displayNumbers();
-
-    return 0;
+    
+int main()
+{
+    int value1,value2;
+    cout<<"Enter the Values:";
+    cin>>value1>>value2;
+   swapnumber obj (value1,value2);
+    raj(obj);
+    obj.display();
 }
